@@ -1642,7 +1642,7 @@
 
                 if (focusState === 'none') {
                     if (hasOpenedAnyGift) {
-                        const openedBox = boxes.find(b => b.isOpened);
+                        const openedBox = .find(b => b.isOpened);
                         if (!openedBox || openedBox.isOpeningAnim) return;
                         if (raycaster.intersectObject(openedBox.giftMesh, true).length > 0) {
                             focusedGift = openedBox; focusState = 'focusing'; focusProgress = 0;
